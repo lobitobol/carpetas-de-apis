@@ -3,13 +3,13 @@
 require 'db_connection.php';
 
 // Verificar si el parámetro id_usuario está presente en la solicitud
-if (isset($_POST['id_usuario'])) {
-    $id_usuario = $_POST['id_usuario'];
+if (isset($_POST['id_user'])) {
+    $id_user = $_POST['id_user'];
 
     try {
         // Preparar la consulta
-        $stmt = $conn->prepare("INSERT INTO usuarios (id_usuario) VALUES (:id_usuario)");
-        $stmt->bindParam(':id_usuario', $id_usuario);
+        $stmt = $conn->prepare("INSERT INTO usuarios (id_user) VALUES (:id_user)");
+        $stmt->bindParam(':id_user', $id_user);
 
         // Ejecutar la consulta
         if ($stmt->execute()) {

@@ -1,8 +1,8 @@
 <?php
 $host = "bmarzf1a8kkowhzkfljx-mysql.services.clever-cloud.com"; // Tu host de Clever Cloud
-$db_name = "TU_NOMBRE_DE_BASE_DE_DATOS"; // Nombre de la base de datos
-$username = "TU_USUARIO"; // Usuario de la base de datos
-$password = "TU_CONTRASEÑA"; // Contraseña de la base de datos
+$db_name = "bmarzf1a8kkowhzkfljx"; // Nombre de la base de datos
+$username = "ubapbyqa0bspmix0"; // Usuario de la base de datos
+$password = "7THw0vE3QnUdCOcZJRjF"; // Contraseña de la base de datos
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db_name;charset=utf8", $username, $password);
